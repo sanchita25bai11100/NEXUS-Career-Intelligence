@@ -1,3 +1,19 @@
+<p align="center">
+  <img src="nexus-banner.svg" alt="NEXUS - AI Career Intelligence & Skill Gap Analysis System" width="100%">
+</p>
+
+<h1 align="center">NEXUS</h1>
+
+<p align="center">
+  <strong>AI Career Intelligence & Skill Gap Analysis System</strong>
+</p>
+
+<p align="center">
+  A Java-based system for career compatibility analysis, skill gap detection,
+  and personalized career recommendations.
+</p>
+
+
 # NEXUS — AI Career Intelligence & Skill Gap Analysis System
 
 > A Java-based intelligent career guidance system that analyzes student skills, identifies career compatibility, detects skill gaps, and generates personalized career development recommendations.
