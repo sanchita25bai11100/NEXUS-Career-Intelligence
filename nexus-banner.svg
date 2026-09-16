@@ -1,0 +1,169 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="50%" stop-color="#111B3A"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-opacity="0.045"
+            stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1030" cy="80" r="150"
+          fill="#6366F1"
+          opacity="0.08"/>
+
+  <circle cx="1090" cy="300" r="180"
+          fill="#38BDF8"
+          opacity="0.06"/>
+
+  <!-- Neural/network lines -->
+  <g stroke="url(#accent)" stroke-width="2" opacity="0.45">
+    <line x1="850" y1="100" x2="960" y2="65"/>
+    <line x1="960" y1="65" x2="1080" y2="120"/>
+    <line x1="850" y1="100" x2="900" y2="220"/>
+    <line x1="900" y1="220" x2="1050" y2="250"/>
+    <line x1="1080" y1="120" x2="1050" y2="250"/>
+    <line x1="960" y1="65" x2="1050" y2="250"/>
+  </g>
+
+  <!-- Network nodes -->
+  <g fill="#38BDF8" filter="url(#glow)">
+    <circle cx="850" cy="100" r="7"/>
+    <circle cx="960" cy="65" r="7"/>
+    <circle cx="1080" cy="120" r="7"/>
+    <circle cx="900" cy="220" r="7"/>
+    <circle cx="1050" cy="250" r="7"/>
+  </g>
+
+  <!-- Main NEXUS logo -->
+  <g transform="translate(90 75)">
+    <!-- Hexagon -->
+    <polygon
+      points="70,0 130,35 130,105 70,140 10,105 10,35"
+      fill="none"
+      stroke="url(#accent)"
+      stroke-width="5"/>
+
+    <!-- Nexus connections -->
+    <g stroke="#38BDF8" stroke-width="4" stroke-linecap="round">
+      <line x1="70" y1="25" x2="70" y2="115"/>
+      <line x1="30" y1="48" x2="110" y2="92"/>
+      <line x1="110" y1="48" x2="30" y2="92"/>
+    </g>
+
+    <g fill="#FFFFFF">
+      <circle cx="70" cy="25" r="6"/>
+      <circle cx="30" cy="48" r="6"/>
+      <circle cx="110" cy="48" r="6"/>
+      <circle cx="30" cy="92" r="6"/>
+      <circle cx="110" cy="92" r="6"/>
+      <circle cx="70" cy="115" r="6"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="270" y="130"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="64"
+        font-weight="700"
+        letter-spacing="8"
+        fill="#FFFFFF">
+    NEXUS
+  </text>
+
+  <!-- Accent line -->
+  <rect x="275" y="155"
+        width="420"
+        height="4"
+        rx="2"
+        fill="url(#accent)"/>
+
+  <!-- Subtitle -->
+  <text x="275" y="205"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-weight="400"
+        fill="#CBD5E1">
+    AI Career Intelligence
+  </text>
+
+  <text x="275" y="238"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-weight="400"
+        fill="#CBD5E1">
+    &amp; Skill Gap Analysis System
+  </text>
+
+  <!-- Feature pills -->
+  <g font-family="Arial, Helvetica, sans-serif"
+     font-size="14"
+     font-weight="600">
+
+    <rect x="275" y="270" width="125" height="34"
+          rx="17" fill="#FFFFFF" fill-opacity="0.08"
+          stroke="#38BDF8" stroke-opacity="0.5"/>
+
+    <text x="337" y="292"
+          text-anchor="middle"
+          fill="#BAE6FD">
+      CAREER MATCHING
+    </text>
+
+    <rect x="415" y="270" width="125" height="34"
+          rx="17" fill="#FFFFFF" fill-opacity="0.08"
+          stroke="#818CF8" stroke-opacity="0.5"/>
+
+    <text x="477" y="292"
+          text-anchor="middle"
+          fill="#DDD6FE">
+      SKILL GAP
+    </text>
+
+    <rect x="555" y="270" width="145" height="34"
+          rx="17" fill="#FFFFFF" fill-opacity="0.08"
+          stroke="#A78BFA" stroke-opacity="0.5"/>
+
+    <text x="627" y="292"
+          text-anchor="middle"
+          fill="#EDE9FE">
+      RECOMMENDATIONS
+    </text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="960" y="325"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="13"
+        letter-spacing="3"
+        fill="#64748B">
+    JAVA • OOP • MAVEN • JUNIT
+  </text>
+</svg>
